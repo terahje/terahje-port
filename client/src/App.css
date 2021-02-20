@@ -34,6 +34,20 @@
 .projects-grid {
   display: flex;
 }
+.header title {
+  color: white;
+}
+/* Resume Page css */
+.resume-right-col {
+  background: rgb(6 44 97);
+  color: white;
+  padding: 2em;
+}
+
+.skills-grid p {
+  color: white;
+  
+}
 
 .avatar-img {
   height: 450px;
