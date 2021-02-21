@@ -31,31 +31,48 @@
   height: 100%;
 }
 
+h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .projects-grid {
   display: flex;
 }
 .header title {
   color: white;
 }
+
+.mdl-layout__drawer-button:hover {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: red;
+  border-radius: 10px;
+}
+
 /* Resume Page css */
 .resume-right-col {
-  background: rgb(6 44 97);
+  background: rgb(6, 44, 97);
   color: white;
   padding: 2em;
 }
 
 .skills-grid p {
   color: white;
-  
 }
 
 .avatar-img {
   height: 450px;
-  padding-top: 5em;
+  padding-top: 10em;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .banner-text {
-  background-color: black;
+  background-color: rgba(32, 32, 32, 0.76);
   opacity: 0.8;
   width: 75%;
   margin: auto;
@@ -134,4 +151,94 @@
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;
+}
+
+header a:hover {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: red;
+  border-radius: 10px;
+}
+
+.nav-color {
+  color: #004e92;
+}
+
+header link .nav-color {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: red;
+  border-radius: 10px;
+}
+
+.social-links a:hover {
+  background-color: rgba(255, 0, 0, 0.753);
+  border-radius: 10px;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  color: red;
+}
+
+/* about section */
+
+.about-main-col {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-header {
+  color: white;
+}
+
+.about-body {
+  background-color: rgba(236, 236, 236, 0.1);
+  padding: 10px 25px 10px 25px;
+}
+
+.about-body p {
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.about-img {
+  height: 450px;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  border-radius: 20px;
+}
+
+.aboutBadge-img {
+  height: 250px;
+}
+
+.about-back {
+  position: sticky;
+  background-size: cover;
+}
+
+.about-body-col {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.9),
+    rgba(0, 4, 40, 0.9)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.9),
+    rgba(0, 4, 40, 0.9)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  border-radius: 10px;
 }
