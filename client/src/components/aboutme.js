@@ -43,11 +43,11 @@ class About extends Component {
             allows you to work with a team to achieve a common goal.  I'm excited to see where this path leads too and feel the future
             is as bright as our Tucson Sun.
 				</p>
-                  <img
+                  <a className="badgeLink" href="https://arizona.badgr.com/public/assertions/hgg-sjWEQuW6nKi-nPoktg" target="_blank"><img
                           src={require("../assets/images/badge.jpg").default}
                           alt="badge for full-stack web certificate"
                           className= "aboutBadge-img"
-                      />
+                      /></a>
         
                     </div>
                 </Cell>
