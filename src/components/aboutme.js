@@ -5,7 +5,7 @@ import background from "../assets/images/aboutBodyBackground.jpg";
 class About extends Component {
     render() {
         return(
-            <div class="mdl-layout__content">
+            <div className="mdl-layout__content">
             <Grid className="about-back" style={{ backgroundImage: `url(${background})`}}>
                 <Cell className="left-main-col" col={4}></Cell>
                 <Cell className="about-main-col" col={4}>
