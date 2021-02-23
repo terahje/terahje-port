@@ -5,7 +5,7 @@ class Landing extends Component {
     render() {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
-                <Grid className="landing-grid">
+                <Grid className="landing-page-back">
                     <Cell col={12}>
                     <img
                     src={require("../assets/images/profile-pic.jpg").default}
