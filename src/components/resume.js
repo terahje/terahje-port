@@ -34,7 +34,7 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <p>terahje_dev@gmail.com</p>
                         <h5>Web</h5>
-                        <p>mywebsite.com</p>
+                        <a href="http://terahje.com" target="_blank">terahje.com</a>
                         <hr style={{borderTop: '3px solid #004e92', width: '50%'}}/>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>

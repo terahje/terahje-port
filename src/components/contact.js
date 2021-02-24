@@ -9,21 +9,19 @@ class Contact extends Component {
                 <Grid className="contact-grid">
                     <Cell className="conBackGrid" col={6}>
                         <div className="con-main">
-                            <h2 style={{ width: '55%', margin: 'auto', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.8)', borderRadius: '5px'}}>Let's Work!</h2>
-                            <img
-                            src={require("../assets/images/profile-pic.jpg").default}
-                            alt="Terahje Gratkowski"
-                            className= "avatar-img"
+                            <h2 style={{ width: '55%', padding:'25px', margin: 'auto', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.4)', borderRadius: '5px'}}>Let's Work!</h2>
+                            <iframe src="https://giphy.com/embed/WZ4M8M2VbauEo" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            {/* className= "avatar-img"
                             style={{height: '300px', padding: '10px 10px 10px 10px'}}
-                            />
+                            /> */}
                             {/* <img 
                             src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
                             alt="avatar"
                             style={{height: '250px', padding: '10px 10px 10px 10px'}}
                             /> */}
-                            <p style={{ width: '85%', margin: 'auto', padding: '1em', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.8)', borderRadius: '5px', fontSize:'18px'}}>
+                            <p style={{ width: '85%', padding: '10px 10px 20px 10px',margin: 'auto', padding: '1em', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.8)', borderRadius: '5px', fontSize:'18px'}}>
                             On this journey, I've been fortunate enough to work with some great people thus far and expand on the foundation laid during the Bootcamp. 
-                            The feeling of collaboration reminds me of my days' sports, where I can be apart of something greater than myself. If you've made it this 
+                            The feeling of collaboration reminds me of my days' in sports, where I can be apart of something greater than myself. If you've made it this 
                             far on my page, Thank You sincerely. Even better if you would like to work together on a future project, please reach out via email or the 
                             following links.
                             </p>

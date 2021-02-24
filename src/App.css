@@ -1,28 +1,10 @@
 .header-color {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #004e92,
-    #000428
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #004e92,
-    #000428
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(./assets/images/landBack.jpg);
+  background-size: cover;
 }
 .landing-grid {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #004e92,
-    #000428
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #004e92,
-    #000428
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(./assets/images/landBack.jpg);
+  background-size: cover;
   text-align: center;
   position: fixed;
   top: 0;
@@ -54,8 +36,13 @@ h1 {
 
 .mdl-layout__drawer-button:hover {
   background-color: rgba(236, 236, 236, 0.753);
-  color: red;
+  color: #000428;
   border-radius: 10px;
+}
+
+.mdl-layout__drawer .mdl-navigation a.mdl-navigation__link:hover {
+  color: white;
+  background-color: rgba(0, 34, 65, 0.7);
 }
 
 /* Resume Page css */
@@ -103,7 +90,7 @@ h1 {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 50%;
   margin: auto;
 }
@@ -168,15 +155,15 @@ h1 {
 }
 
 .conBackGrid {
-  background-image: url(./assets/images/matrix.jpg);
+  background-image: url(./assets/images/landBack.jpg);
   background-size: contain;
   border-radius: 5px;
   box-shadow: rgba(0, 23, 43, 0.8);
 }
 
 header a:hover {
-  background-color: rgba(236, 236, 236, 0.753);
-  color: red;
+  background-color: rgba(0, 23, 43, 0.7);
+  color: #000428;
   border-radius: 10px;
 }
 
@@ -186,17 +173,17 @@ header a:hover {
 
 header link .nav-color {
   background-color: rgba(236, 236, 236, 0.753);
-  color: red;
+  color: #000428;
   border-radius: 10px;
 }
 
 .social-links a:hover {
-  background-color: rgba(255, 0, 0, 0.753);
+  background-color: greenyellow;
   border-radius: 10px;
 }
 
 .mdl-layout__header-row .mdl-navigation__link:hover {
-  color: red;
+  color: greenyellow;
 }
 
 /* about section */
