@@ -30,15 +30,24 @@ This website is a full embodiment of my current progress as a developer. Utilizi
 npm install
 npm start
 
-** Landing Page
+#### Landing Page
+
 ![](/assets/images/landingScreen.jpg)
-** Resume Page
+
+#### Resume Page
+
 ![](/assets/images/resumeScreen.jpg)
-** About Me Page
+
+#### About Me Page
+
 ![](/assets/images/aboutMeScreen.jpg)
-** Projects Page
+
+#### Projects Page
+
 ![](/assets/images/resumeScreen.jpg)
-\*\* Contact Page
+
+#### Contact Page
+
 ![](/assets/images/contactScreen.jpg)
 
 ## License
@@ -70,5 +79,5 @@ SOFTWARE.
 For further questions on this project or future collaboration contact me at:<br>
 
 - GitHub: [terahje](https://github.com/terahje)
-- Email: terahj.dev@gmail.com
-- Repository link: [AWS Thought](https://github.com/terahje/terahje-port)
+- Email: terahje.dev@gmail.com
+- Repository link: [Terahje Portfolio](https://github.com/terahje/terahje-port)
