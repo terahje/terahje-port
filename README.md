@@ -27,26 +27,26 @@ This website is a full embodiment of my current progress as a developer. Utilizi
 
 ## Usage
 
-npm install
+npm install <br>
 npm start
 
-#### Landing Page
+### Landing Page
 
 ![](/assets/images/landingScreen.jpg)
 
-#### Resume Page
+### Resume Page
 
 ![](/assets/images/resumeScreen.jpg)
 
-#### About Me Page
+### About Me Page
 
 ![](/assets/images/aboutMeScreen.jpg)
 
-#### Projects Page
+### Projects Page
 
 ![](/assets/images/resumeScreen.jpg)
 
-#### Contact Page
+### Contact Page
 
 ![](/assets/images/contactScreen.jpg)
 
