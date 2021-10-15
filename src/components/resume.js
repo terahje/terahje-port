@@ -14,12 +14,12 @@ class Resume extends Component {
                             <img 
                               src={require("../assets/images/linkedin-background.jpg").default}
                               alt="Terahje Gratkowski"
-                              style={{height: '350px'}}
+                              className="resume-topper"
                             />
                         </div>
 
                         <h2 style={{paddingTop: '.3em'}}>Terahje Gratkowski</h2>
-                        <h4 style={{color: 'grey'}}>Web Developer/ Junior Software Engineer</h4>
+                        <h4 style={{color: 'grey'}}>Web Developer/ Software Engineer</h4>
                         <hr style={{borderTop: '3px solid #004e92', width: '50%'}}/>
                         <p>
                         Solutions-driven full-stack web developer with a Web Development Certificate from the University of Arizona. 

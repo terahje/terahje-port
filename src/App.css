@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: rgb(16, 124, 16);
+  --dark-blue: rgb(6, 44, 97);
+  --white-color: #fff;
+  --black-color: #000;
+
+  --font-family_title: 'Roboto Slab', serif;
+  --font-family_sub-title: var(--font-family_title);
+  --font-family_regular: 'Gemunu Libre', sans-serif;
+  --font-family_special: 'Rajdhani', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of Common Styles */
+
 .header-color {
   background-image: url(./assets/images/landBack.jpg);
   background-size: cover;
@@ -13,13 +49,9 @@
   height: 100%;
 }
 
-/* .homeTexture {
-  opacity: 30%;
-} */
-
 h1 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 56px;
+  font-family: var(--font-family_title);
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: -0.02em;
@@ -57,9 +89,11 @@ h1 {
 }
 
 .avatar-img {
-  height: 450px;
-  padding-top: 7em;
-  border-radius: 10px 10px 10px 10px;
+  height: 40rem;
+  border: 0.5rem solid var(--dark-blue);
+  border-radius: 40%;
+  position: relative;
+  top: 5%;
 }
 
 .banner-text {
@@ -86,6 +120,11 @@ h1 {
   color: white;
   font-size: 20px;
   padding: 1em;
+}
+
+.resume-topper {
+  height: auto;
+  width: 100%;
 }
 
 .social-links {
@@ -125,11 +164,11 @@ h1 {
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
 }
 
 .contact-grid p {
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: bold;
 }
 
@@ -258,7 +297,7 @@ a hover {
 /* projects css */
 .mdl-card__title-text {
   background-color: rgba(0, 4, 40, 0.61);
-  font-family: "Oxygen";
+  font-family: 'Oxygen';
   width: 100%;
   border-radius: 2px;
 }
