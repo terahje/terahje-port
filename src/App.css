@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Common Styles */
 * {
@@ -15,15 +15,16 @@ html {
 }
 
 :root {
-  --primary-color: rgb(16, 124, 16);
-  --dark-blue: rgb(6, 44, 97);
+  --primary-color: rgb(6, 44, 97);
+  --secondary-color: greenyellow;
+  --dark-blue: rgb(3, 26, 58);
   --white-color: #fff;
   --black-color: #000;
 
-  --font-family_title: 'Roboto Slab', serif;
+  --font-family_title: 'Exo 2', sans-serif;
   --font-family_sub-title: var(--font-family_title);
   --font-family_regular: 'Gemunu Libre', sans-serif;
-  --font-family_special: 'Rajdhani', sans-serif;
+  --font-family_special: 'Roboto Slab', serif;
 }
 
 .center {
@@ -34,6 +35,7 @@ html {
 
 /* End of Common Styles */
 
+/* Landing Page */
 .header-color {
   background-image: url(./assets/images/landBack.jpg);
   background-size: cover;
@@ -49,43 +51,33 @@ html {
   height: 100%;
 }
 
-h1 {
-  font-family: var(--font-family_title);
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.nav-color {
+  color: #004e92;
 }
 
-.projects-grid {
-  display: flex;
-}
-.header title {
-  color: white;
-}
-
-.mdl-layout__drawer-button:hover {
+header link .nav-color {
   background-color: rgba(236, 236, 236, 0.753);
   color: #000428;
   border-radius: 10px;
 }
 
-.mdl-layout__drawer .mdl-navigation a.mdl-navigation__link:hover {
-  color: white;
-  background-color: rgba(0, 34, 65, 0.7);
+.mdl-layout__title,
+.mdl-layout-title {
+  font-family: var(--font-family_title);
 }
 
-/* Resume Page css */
-.resume-right-col {
-  background: rgb(6, 44, 97);
-  color: white;
-  padding: 2em;
+.mdl-layout__header-row .mdl-navigation__link {
+  display: block;
+  line-height: 64px;
+  font-size: 1.5rem;
+  font-family: var(--font-family_regular);
+  transition: all 0.5s;
 }
 
-.skills-grid p {
-  color: white;
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  color: greenyellow;
+  transform: scale(1.2);
+  transition: transform 0.5s, color 0.5s;
 }
 
 .avatar-img {
@@ -100,14 +92,15 @@ h1 {
   background-color: rgba(32, 32, 32, 0.76);
   opacity: 0.8;
   width: 75%;
-  margin: auto;
+  margin: 5rem auto;
   border-radius: 10px;
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 6rem;
   font-weight: bold;
-  color: white;
+  color: var(--white-color);
+  font-family: var(--font-family_title);
 }
 
 .banner-text hr {
@@ -117,14 +110,44 @@ h1 {
 }
 
 .banner-text p {
-  color: white;
-  font-size: 20px;
+  color: var(--secondary-color);
+  font-size: 2rem;
   padding: 1em;
+  font-family: var(--font-family_regular);
 }
 
-.resume-topper {
-  height: auto;
-  width: 100%;
+.projects-grid {
+  display: flex;
+}
+.header title {
+  color: white;
+}
+
+.mdl-layout__drawer-button {
+  transition: all 0.5s;
+}
+
+.mdl-layout__drawer-button:hover {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: #000428;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  font-family: var(--font-family_title);
+  font-size: 1.5rem;
+}
+
+.mdl-layout__title,
+.mdl-layout-title {
+  font-family: var(--font-family_special);
+}
+
+.mdl-layout__drawer .mdl-navigation a.mdl-navigation__link:hover {
+  color: white;
+  background-color: rgba(0, 34, 65, 0.7);
+  font-family: var(--font-family_title);
 }
 
 .social-links {
@@ -138,92 +161,86 @@ h1 {
   color: white;
   font-size: 5em;
   padding: 8px;
+  transition: all 0.5s;
 }
 
-.projectButtons {
-  text-align: center;
+.social-links i:hover {
+  color: greenyellow;
+  transform: scale(1.1);
+  transition: transform 0.5s, color 0.5s;
 }
 
-.contact-body {
-  margin: auto;
-  position: fixed;
+/* End of Landing Page */
+
+/* Resume Page */
+.resume-right-col {
+  background: rgb(6, 44, 97);
+  color: white;
+  padding: 2em;
+}
+
+.resume-sub-title {
+  font-family: var(--font-family_title);
+}
+
+.resume-p {
+  font-size: 1.5rem;
+  font-weight: var(--font-family_special);
+  font-weight: 200;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+.resume-right-col h2 {
+  font-family: var(--font-family_title);
+}
+
+.mdl-grid {
+  padding: 8px;
+  font-family: var(--font-family_title);
+}
+
+.skills-grid p {
+  color: white;
+}
+
+.resume-topper {
+  height: auto;
   width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
 }
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
+.resume-name {
+  font-family: var(--font-family_regular);
+  font-size: 5rem;
+  color: var(--primary-color);
 }
 
-.contact-grid h2 {
-  font-family: 'Anton', sans-serif;
+.resume-address {
+  font-size: 1.7rem;
+  font-family: var(--font-family_title);
 }
 
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
+.resume-add-p,
+.resume-add-a {
+  font-size: 1.3rem;
+  color: rgb(226, 41, 71);
+  transition: all 0.5s;
 }
 
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
+.resume-add-a:hover {
+  color: var(--primary-color);
+  transition: color 0.5s;
 }
 
-.contact-list i {
-  font-size: 66px;
-  padding-right: 5rem;
+h4 {
+  font-family: var(--font-family_title) !important;
 }
 
-.contact-list a {
-  color: #004e92;
+#Education p,
+#Experience p {
+  font-family: var(--font-family_regular);
 }
-
-.contact-list a:hover {
-  color: greenyellow;
-  background-color: rgba(0, 23, 43, 0.3);
-  border-radius: 5px;
-}
-
-.conBackGrid {
-  background-image: url(./assets/images/landBack.jpg);
-  background-size: contain;
-  border-radius: 5px;
-  box-shadow: rgba(0, 23, 43, 0.8);
-}
-
-header a:hover {
-  background-color: rgba(0, 23, 43, 0.7);
-  color: #000428;
-  border-radius: 10px;
-}
-
-.nav-color {
-  color: #004e92;
-}
-
-header link .nav-color {
-  background-color: rgba(236, 236, 236, 0.753);
-  color: #000428;
-  border-radius: 10px;
-}
-
-.social-links a:hover {
-  background-color: greenyellow;
-  border-radius: 10px;
-}
-
-.mdl-layout__header-row .mdl-navigation__link:hover {
-  color: greenyellow;
-}
+/* End of Resume Page */
 
 /* about section */
 
@@ -314,3 +331,66 @@ a hover {
   margin: 0 auto 0 auto;
   align-items: stretch;
 }
+
+.projectButtons {
+  text-align: center;
+}
+
+/* Contact Page */
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+.contact-list a {
+  color: #004e92;
+}
+
+.contact-list a:hover {
+  color: greenyellow;
+  background-color: rgba(0, 23, 43, 0.3);
+  border-radius: 5px;
+}
+
+.conBackGrid {
+  background-image: url(./assets/images/landBack.jpg);
+  background-size: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 23, 43, 0.8);
+}
+
+/* End of Contact Page */

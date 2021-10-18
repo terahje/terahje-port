@@ -18,23 +18,23 @@ class Resume extends Component {
                             />
                         </div>
 
-                        <h2 style={{paddingTop: '.3em'}}>Terahje Gratkowski</h2>
-                        <h4 style={{color: 'grey'}}>Web Developer/ Software Engineer</h4>
-                        <hr style={{borderTop: '3px solid #004e92', width: '50%'}}/>
-                        <p>
+                        <h1 className='resume-name'>Terahje Gratkowski</h1>
+                        <h4 className='resume-sub-title'>Web Developer/ Software Engineer</h4>
+                        <hr style={{borderTop: '3px solid #004e92', width: '100%'}}/>
+                        <p className='resume-p'>
                         Solutions-driven full-stack web developer with a Web Development Certificate from the University of Arizona. 
                         Motivated by learning new technology and experiencing self-growth. Detailed oriented developer pulling experience 
                         from the customer service industry capitalizing on strong written/ verbal communication skills, problem-solving, 
                         collaboration, and analytical skills. Dedicated team member competent in website conception, design, and production. 
                         Looking forward to leveraging skills as a part of a team to successfully maintain and deploy applications.
                         </p>
-                        <hr style={{borderTop: '3px solid #004e92', width: '50%'}}/>
-                        <h5>Address</h5>
-                        <p>Tucson, Arizona</p>
-                        <h5>Email</h5>
-                        <p>terahje_dev@gmail.com</p>
-                        <h5>Web</h5>
-                        <a href="http://terahje.com" target="_blank">terahje.com</a>
+                        <hr style={{borderTop: '3px solid #004e92', width: '80%'}}/>
+                        <h5 className='resume-address'>Address</h5>
+                        <p className='resume-add-p'>Tucson, Arizona</p>
+                        <h5 className='resume-address'>Email</h5>
+                        <p className='resume-add-p'>terahje_dev@gmail.com</p>
+                        <h5 className='resume-address'>Web</h5>
+                        <a href="http://terahje.com" target="_blank" className='resume-add-a'>terahje.com</a>
                         <hr style={{borderTop: '3px solid #004e92', width: '50%'}}/>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
