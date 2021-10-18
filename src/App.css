@@ -335,9 +335,21 @@ h4 {
 /* projects css */
 .mdl-card__title-text {
   background-color: rgba(0, 4, 40, 0.61);
-  font-family: 'Oxygen';
+  font-family: var(--font-family_regular);
+  font-size: 2.5rem !important;
   width: 100%;
   border-radius: 2px;
+}
+
+.mdl-card__supporting-text {
+  font-family: var(--font-family_title);
+}
+
+.mdl-button.mdl-button--colored {
+  color: rgb(63, 81, 181);
+  font-family: var(--font-family_regular);
+  font-size: 1.5rem;
+  transition: all 0.2s;
 }
 
 .banner-text hr {
@@ -346,11 +358,32 @@ h4 {
   margin: auto;
 }
 
+.mdl-button {
+  transition: background-color 0.5s, color 0.2s;
+}
+.mdl-button:hover {
+  background-color: rgba(158, 158, 158, 0.2) !important;
+  color: red !important;
+  transition: background-color 0.5s, color 0.2s;
+}
+
 .mdl-grid {
   display: contents;
   flex-flow: row wrap;
   margin: 0 auto 0 auto;
   align-items: stretch;
+}
+
+.mdl-tabs__tab .mdl-tabs__ripple-container:hover {
+  background-color: rgba(6, 44, 97, 0.5);
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  font-family: var(--font-family_title);
+}
+
+.mdl-tabs__tab {
+  font-size: 1.2rem;
 }
 
 .projectButtons {
