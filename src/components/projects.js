@@ -6,7 +6,8 @@ import pythonNews from '../assets/images/pythonNews.jpg'
 import aws from '../assets/images/awsDT.jpg'
 import budget from '../assets/images/budget-tracker-image.jpg'
 import nts from '../assets/images/ntscreenshot.jpg'
-
+import booWedding from '../assets/images/landingP.jpg'
+import busAge from '../assets/images/businessAge.jpg'
 
 class Projects extends Component {
     constructor(props) {
@@ -38,6 +39,7 @@ class Projects extends Component {
                             <IconButton name="share" />
                         </CardMenu>
                     </Card>
+                    {/* End of Project 1 in React*/}
                 {/* Project 2 in React */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle className="awsThought" style={{color: '#fff', height: '176px', background: `url(${aws}) center/cover`}} >AWS - Deep Thoughts</CardTitle>
@@ -57,12 +59,34 @@ class Projects extends Component {
                             <IconButton name="share" />
                         </CardMenu>
                     </Card>
+                    {/* End of Project 2 in React */}
+                {/* Project 3 in React */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle className="booWedding" style={{color: '#fff', height: '176px', background: `url(${booWedding}) center/cover`}} >Boo Wedding</CardTitle>
+                            <CardText>
+                            My first passion project, this application came to life using React to build the front-end pages. A wedding website for my forthcoming wedding, each page is to share 
+                            our story with our loved ones.
+                            </CardText>
+                            <CardText>
+                                <strong>Technolgies:</strong> JavaScript, Node.js, React, CSS, React-Bootstrap, React-MDL, Rumess/react-flip-countdown
+                            </CardText>
+                            <CardActions border>
+                                <Button colored href="https://github.com/terahje/boo-wedding" target="_blank">GitHub</Button>
+                                
+                                <Button colored href="https://rtg-wedding.herokuapp.com/" target="_blank">Live Demo</Button>
+                            </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    {/* End of Project 3 in React */}
                 </div>    
           )} else if(this.state.activeTab === 1) {
             return (
                 // javascript
                 <div className="projects-grid">
                 {/* Project 1 in JS */}
+
                         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                             <CardTitle style={{color: '#fff', height: '176px', background: `url(${wizier}) center/cover`}} >Wizier</CardTitle>
                                 <CardText>
@@ -80,6 +104,7 @@ class Projects extends Component {
                             <IconButton name="share" />
                             </CardMenu>
                         </Card>
+
                         {/* Project 2 in JS */}
                         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                             <CardTitle style={{color: '#fff', height: '176px', background: `url(${budget}) center/cover`}} >Budget Tracker</CardTitle>
@@ -116,6 +141,27 @@ class Projects extends Component {
                             <IconButton name="share" />
                             </CardMenu>
                         </Card>
+
+                        {/* Project 4 in JS */}
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                            <CardTitle style={{color: '#fff', height: '176px', background: `url(${busAge}) center/cover`}} >Business Agency</CardTitle>
+                                <CardText>
+                                This project was for a mock business agency so the site has a sleek design. The subtle animation on the landing page greets the user right away with what this site is offering. 
+                                This project also showed how to input a video with custom controls, so the time of the video syncs with the red line underneath. 
+                                </CardText>
+                                <CardText>
+                                    <strong>Technolgies:</strong> JavaScript, HTML, CSS
+                                </CardText>
+                            <CardActions border>
+                                <Button colored href="https://github.com/terahje/BusinessAgency" target="_blank">GitHub</Button>
+                                
+                                <Button colored href="https://terahje.github.io/BusinessAgency/" target="_blank">Live Demo</Button>
+                            </CardActions>
+                            <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share" />
+                            </CardMenu>
+                        </Card>
+                       
              </div>
             )
           } else if(this.state.activeTab === 2) {

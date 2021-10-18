@@ -237,6 +237,7 @@ header link .nav-color {
 
 .resume-add-a:hover {
   color: var(--primary-color);
+  text-decoration: underline;
   transition: color 0.5s;
 }
 
@@ -367,6 +368,11 @@ h4 {
   transition: background-color 0.5s, color 0.2s;
 }
 
+.project-card {
+  height: 6rem;
+  width: 8rem;
+}
+
 .mdl-grid {
   display: contents;
   flex-flow: row wrap;
@@ -411,33 +417,52 @@ h4 {
 }
 
 .contact-grid h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: var(--font-family_regular), sans-serif;
 }
 
 .contact-grid p {
-  font-family: 'Oxygen', sans-serif;
+  font-family: var(--font-family_title), sans-serif;
   font-weight: bold;
+}
+
+.contact-list {
+  font-weight: var(--font-family_title);
+  font-size: 3rem;
+  margin: 5rem auto;
 }
 
 .contact-grid hr {
   border-top: 5px dotted black;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
 .contact-list i {
-  font-size: 66px;
+  font-size: 5rem;
   padding-right: 5rem;
+  margin: 2rem auto;
+}
+
+.contact-title h2 {
+  font-size: 7rem;
+}
+
+.img .gmail {
+  height: 4rem;
+  width: 5rem;
 }
 
 .contact-list a {
   color: #004e92;
+  transition: all 0.4s;
 }
 
 .contact-list a:hover {
   color: greenyellow;
   background-color: rgba(0, 23, 43, 0.3);
   border-radius: 5px;
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
 .conBackGrid {
