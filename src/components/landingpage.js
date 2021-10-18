@@ -7,6 +7,7 @@ class Landing extends Component {
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
+                        <section className='landingPageContainer'>
                     <img
                     src={require("../assets/images/profile-pic.jpg").default}
 					alt="Terahje Gratkowski"
@@ -31,6 +32,7 @@ class Landing extends Component {
                         </a>
                     </div>
                     </div>
+                    </section>
                     </Cell>
                 </Grid>
             </div>

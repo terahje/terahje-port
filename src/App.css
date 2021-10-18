@@ -36,6 +36,7 @@ html {
 /* End of Common Styles */
 
 /* Landing Page */
+
 .header-color {
   background-image: url(./assets/images/landBack.jpg);
   background-size: cover;
@@ -49,6 +50,13 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.landingPageContainer {
+  height: 100vh;
+  width: 100%;
+  margin-top: 2.5%;
+  position: relative;
 }
 
 .nav-color {
@@ -92,7 +100,7 @@ header link .nav-color {
   background-color: rgba(32, 32, 32, 0.76);
   opacity: 0.8;
   width: 75%;
-  margin: 5rem auto;
+  margin: 3.5rem auto;
   border-radius: 10px;
 }
 
@@ -260,19 +268,27 @@ h4 {
   border-radius: 10px;
 }
 
-.about-header {
+.about-hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-header h1 {
   color: white;
+  font-family: var(--font-family_regular);
+  font-size: 6rem;
 }
 
 .about-body {
   background-color: rgba(236, 236, 236, 0.1);
-  padding: 10px 25px 10px 25px;
+  padding: 2rem 5rem;
 }
 
 .about-body p {
-  font-weight: bolder;
+  font-family: var(--font-family_title);
   color: whitesmoke;
-  font-size: large;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .about-img {
@@ -283,11 +299,16 @@ h4 {
 }
 
 .aboutBadge-img {
-  height: 250px;
+  height: 25rem;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.5s;
 }
 
-a hover {
-  color: rgba(236, 236, 236, 0.1);
+.aboutBadge-img:hover {
+  box-shadow: 0.4rem 0.4rem 1.5rem red, -0.3rem -0.3rem 1.5rem white;
+  transform: scale(1.05);
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .about-back {
