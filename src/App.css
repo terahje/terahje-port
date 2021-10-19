@@ -45,7 +45,7 @@ html {
   background-image: url(./assets/images/landBack.jpg);
   background-size: cover;
   text-align: center;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -313,8 +313,10 @@ h4 {
 }
 
 .about-back {
-  position: sticky;
+  position: relative;
   background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .about-body-col {
@@ -399,7 +401,7 @@ h4 {
 /* Contact Page */
 .contact-body {
   margin: auto;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -481,6 +483,12 @@ h4 {
 /* End of Contact Page */
 
 /* Responsive */
+@media (max-width: 1650px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 @media (max-width: 1400px) {
   .contact-list i {
     font-size: 4rem;
@@ -552,8 +560,17 @@ h4 {
     font-size: 4.3rem;
   }
 
+  .about-header h1 {
+    margin-top: 0 !important;
+    margin-bottom: 0% !important;
+  }
+
   .about-hero {
     flex-direction: column;
+  }
+
+  .about-body {
+    padding: 2rem 2rem;
   }
 
   .about-body p {
@@ -561,12 +578,45 @@ h4 {
     text-align: justify;
   }
   .b_Bm76Gr4DeJWnrdhJpi1 {
-    width: 64.5%;
+    width: 64.5% !important;
     top: 10% !important;
   }
 
   .con-main p {
     margin: 0rem auto;
+    width: 100%;
+  }
+
+  .landingPageContainer {
+    height: auto;
+  }
+
+  .contact-title h2 {
+    font-size: 5.5rem;
+  }
+
+  .contact-grid {
+    width: 95%;
+  }
+
+  .con-main .giphy-embed {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .contact-list i {
+    font-size: 5rem;
+    padding-right: 1rem;
+  }
+
+  .contact-list a {
+    font-size: 2rem;
+  }
+
+  #Gmail {
+    height: 4rem;
+    width: 6rem;
+    margin: auto;
   }
 }
 

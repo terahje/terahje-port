@@ -11,7 +11,7 @@ class Contact extends Component {
                     <Cell className="conBackGrid" col={6}>
                         <div className="con-main">
                             <h2 style={{ width: '55%', padding:'25px', margin: 'auto', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.4)', borderRadius: '5px', fontFamily: 'var(--font-family_title)'}}>Let's Work!</h2>
-                            <iframe src="https://giphy.com/embed/WZ4M8M2VbauEo" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            <iframe src="https://giphy.com/embed/WZ4M8M2VbauEo" width="100%" height="274px" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
                             {/* className= "avatar-img"
                             style={{height: '300px', padding: '10px 10px 10px 10px'}}
                             /> */}
@@ -20,7 +20,7 @@ class Contact extends Component {
                             alt="avatar"
                             style={{height: '250px', padding: '10px 10px 10px 10px'}}
                             /> */}
-                            <p style={{ width: '85%', padding: '10px 10px 20px 10px',margin: 'auto', padding: '1em', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.5)', borderRadius: '5px', fontSize:'1.5rem', fontFamily: 'var(--font-regular)', fontWeight: '300', textAlign: 'justify', margin: '2rem auto'}}>
+                            <p style={{ padding: '1rem 3rem', color:'#fff', backgroundColor:'rgba(0, 23, 43, 0.5)', borderRadius: '5px', fontSize:'1.5rem', fontFamily: 'var(--font-regular)', fontWeight: '300', textAlign: 'justify', margin: '2rem auto'}}>
                             On this journey, I've been fortunate enough to work with some great people thus far and excited to see where this path leads. 
                             The feeling of collaboration reminds me of my days' in sports, where I can be apart of something greater than myself. If you've made it this 
                             far on my page, Thank You sincerely. Even better if you would like to work together on a future project, please reach out via email or the 
