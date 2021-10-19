@@ -560,9 +560,17 @@ h4 {
     font-size: 4.3rem;
   }
 
+  .skills-grid {
+    font-size: 1rem;
+  }
+
   .about-header h1 {
     margin-top: 0 !important;
     margin-bottom: 0% !important;
+  }
+
+  .aboutBadge-img {
+    height: 20rem;
   }
 
   .about-hero {
@@ -617,6 +625,24 @@ h4 {
     height: 4rem;
     width: 6rem;
     margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .resume-name {
+    font-size: 3.8rem;
+  }
+
+  .resume-sub-title {
+    font-size: 21px;
+  }
+
+  .contact-list a {
+    font-size: 1.6rem;
   }
 }
 

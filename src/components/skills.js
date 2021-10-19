@@ -5,10 +5,12 @@ class Skills extends Component {
   render() {
     return(
       <Grid>
-        <Cell col={4} phone={2}>
+        <Cell col={4} phone={2} id="skills-grid">
             {/* tried to add icon of skills but did not work, will come back later to fix */}
-          <i className="fab fa-js-square" aria-hidden="true"/>
-          <p style={{fontSize: '25px'}}>JavaScript</p> 
+            <div>
+            <i className="fab fa-js-square"/>
+            <p style={{fontSize: '25px'}}>JavaScript</p> 
+          </div>
                 
 
           {/* <i className="fab fa-html5" aria-hidden="true" /> */}
