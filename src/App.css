@@ -416,6 +416,12 @@ h4 {
   margin-bottom: 20px;
 }
 
+#Gmail {
+  height: 4rem;
+  width: 6rem;
+  margin: -0.1rem 4.5rem 0px -0.8rem;
+}
+
 .contact-grid h2 {
   font-family: var(--font-family_regular), sans-serif;
 }
@@ -473,3 +479,95 @@ h4 {
 }
 
 /* End of Contact Page */
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .contact-list i {
+    font-size: 4rem;
+    padding-right: 5rem;
+    margin: 2rem auto;
+  }
+
+  .contact-title h2 {
+    font-size: 7rem;
+  }
+
+  #Gmail {
+    height: 3rem;
+    width: 5rem;
+  }
+
+  .contact-list a {
+    color: #004e92;
+    font-size: 3rem;
+    transition: all 0.4s;
+  }
+}
+
+@media (max-width: 1080px) {
+  .material-icons {
+    font-size: 2.3rem;
+    color: var(--white-color);
+  }
+
+  .mdl-layout__drawer {
+    color: var(--primary-color);
+  }
+
+  .mdl-layout__header {
+    display: flex !important;
+  }
+
+  .banner-text {
+    margin: 4.5rem auto;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 20%;
+  }
+
+  .avatar-img {
+    height: 35rem;
+  }
+
+  .banner-text h1 {
+    font-size: 4rem;
+  }
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+  .mdl-layout__header {
+    display: none !important;
+  }
+
+  .material-icons {
+    color: var(--secondary-color);
+    background-color: rgba(6, 44, 97, 0.8);
+    border-radius: 5px;
+  }
+
+  .resume-name {
+    font-size: 4.3rem;
+  }
+
+  .about-hero {
+    flex-direction: column;
+  }
+
+  .about-body p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .b_Bm76Gr4DeJWnrdhJpi1 {
+    width: 64.5%;
+    top: 10% !important;
+  }
+
+  .con-main p {
+    margin: 0rem auto;
+  }
+}
+
+/* End of Responsive */

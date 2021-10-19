@@ -37,9 +37,8 @@ class Contact extends Component {
                         <div className="contact-list">
                         <List>
                             <ListItem>
-                                {/* make email button*/}
                             <ListItemContent style={{fontSize: '3.5rem', fontFamily: 'var(--font-family_regular)'}}>
-                                <img src={gmailIcon} className="gmail" alt='Gmail Logo' style={{height: '4rem', width: '6rem', margin: '-.1rem 4.5rem 0px -0.8rem'}}/>
+                                <img src={gmailIcon} id='Gmail' className="gmail" alt='Gmail Logo'/>
                         <a className='btn btn-outline-warning btn-lg' href="mailto:terahje.dev@gmail.com" target="_blank">terahje.dev@gmail.com</a>
                             </ListItemContent>
                             </ListItem>
