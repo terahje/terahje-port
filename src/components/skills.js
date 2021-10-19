@@ -5,7 +5,7 @@ class Skills extends Component {
   render() {
     return(
       <Grid>
-        <Cell col={4} phone={6}>
+        <Cell col={4} phone={2}>
             {/* tried to add icon of skills but did not work, will come back later to fix */}
           <i className="fab fa-js-square" aria-hidden="true"/>
           <p style={{fontSize: '25px'}}>JavaScript</p> 
@@ -19,9 +19,8 @@ class Skills extends Component {
 
           <i class="fab fa-node-js" aria-hidden="true" />
           <p style={{fontSize: '25px'}}>NodeJS</p>
-          
         </Cell>
-        <Cell col={4} phone={6}>
+        <Cell col={4} phone={2}>
           <i className="fab fa-js-square" aria-hidden="true"/>
           <p style={{fontSize: '25px'}}>React</p>
 
@@ -35,7 +34,7 @@ class Skills extends Component {
           <p style={{fontSize: '25px'}}>MongoDB</p>
           
         </Cell>
-        <Cell col={4} phone={6}>
+        <Cell col={4} phone={2}>
           <i className="fab fa-js-square" aria-hidden="true"/>
           <p style={{fontSize: '25px'}}>SQL/ NoSQL</p> 
 
